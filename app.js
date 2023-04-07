@@ -11,6 +11,10 @@ let btn2 = document.getElementById("btn2");
 let btn3 = document.getElementById("btn3");
 let btn4 = document.getElementById("btn4");
 
+let tea1 = document.getElementById("tea_1");
+let tea2 = document.getElementById("tea_2");
+
+
 btn1.addEventListener("click", function () {
   if (tg.MainButton.isVisible) {
     tg.MainButton.hide();
@@ -43,6 +47,26 @@ btn4.addEventListener("click", function () {
   } else {
     tg.MainButton.setText(`${item.toString()}`);
     item.push("coffe4");
+    tg.MainButton.show();
+  }
+});
+
+
+tea1.addEventListener("click", function () {
+  if (tg.MainButton.isVisible) {
+    tg.MainButton.hide();
+  } else {
+    tg.MainButton.setText(`${item.toString()}`);
+    item.push("tea1");
+    tg.MainButton.show();
+  }
+});
+tea2.addEventListener("click", function () {
+  if (tg.MainButton.isVisible) {
+    tg.MainButton.hide();
+  } else {
+    tg.MainButton.setText(`${item.toString()}`);
+    item.push("tea2");
     tg.MainButton.show();
   }
 });
