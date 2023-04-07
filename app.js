@@ -15,14 +15,14 @@ btn1.addEventListener("click", function () {
   if (tg.MainButton.isVisible) {
     tg.MainButton.hide();
   } else {
-    tg.MainButton.setText(item.toString());
+    tg.MainButton.setText("hlep");
     item.push("coffe1");
     tg.MainButton.show();
   }
 });
 btn2.addEventListener("click", function () {
  
-    tg.MainButton.setText(item.toString());
+    tg.MainButton.setText(`${item.toString()}`);
     item.push("coffe2");
     tg.MainButton.show();
 });
@@ -30,7 +30,7 @@ btn3.addEventListener("click", function () {
   if (tg.MainButton.isVisible) {
     tg.MainButton.hide();
   } else {
-    tg.MainButton.setText(item.toString());
+    tg.MainButton.setText(`${item.toString()}`);
     item.push("coffe3");
     tg.MainButton.show();
   }
@@ -39,7 +39,7 @@ btn4.addEventListener("click", function () {
   if (tg.MainButton.isVisible) {
     tg.MainButton.hide();
   } else {
-    tg.MainButton.setText(item.toString());
+    tg.MainButton.setText(`${item.toString()}`);
     item.push("coffe4");
     tg.MainButton.show();
   }
