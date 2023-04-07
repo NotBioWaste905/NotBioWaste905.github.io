@@ -5,7 +5,7 @@ tg.MainButton.textColor = "#FFFFFF";
 tg.MainButton.color = "#2aad31";
 
 var item = [];
-
+var cost = 0;
 let btn1 = document.getElementById("btn1");
 let btn2 = document.getElementById("btn2");
 let btn3 = document.getElementById("btn3");
@@ -15,7 +15,8 @@ btn1.addEventListener("click", function () {
   if (tg.MainButton.isVisible) {
     tg.MainButton.hide();
   } else {
-    tg.MainButton.setText("hlep");
+    cost += 5;
+    tg.MainButton.setText(`${cost}`);
     item.push("coffe1");
     tg.MainButton.show();
   }
@@ -23,6 +24,7 @@ btn1.addEventListener("click", function () {
 btn2.addEventListener("click", function () {
  
     tg.MainButton.setText(`${item.toString()}`);
+    cost += 10;
     item.push("coffe2");
     tg.MainButton.show();
 });
