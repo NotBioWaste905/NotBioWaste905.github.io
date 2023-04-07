@@ -4,7 +4,7 @@ tg.expand();
 tg.MainButton.textColor = "#FFFFFF";
 tg.MainButton.color = "#2aad31";
 
-let item = [];
+var item = [];
 
 let btn1 = document.getElementById("btn1");
 let btn2 = document.getElementById("btn2");
@@ -43,7 +43,7 @@ btn4.addEventListener("click", function () {
     tg.MainButton.hide();
   } else {
     tg.MainButton.setText(item.toString());
-    item.push("coffe3");
+    item.push("coffe4");
     tg.MainButton.show();
   }
 });
