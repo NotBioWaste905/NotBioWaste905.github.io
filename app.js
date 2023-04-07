@@ -21,13 +21,10 @@ btn1.addEventListener("click", function () {
   }
 });
 btn2.addEventListener("click", function () {
-  if (tg.MainButton.isVisible) {
-    tg.MainButton.hide();
-  } else {
+ 
     tg.MainButton.setText(item.toString());
     item.push("coffe2");
     tg.MainButton.show();
-  }
 });
 btn3.addEventListener("click", function () {
   if (tg.MainButton.isVisible) {
